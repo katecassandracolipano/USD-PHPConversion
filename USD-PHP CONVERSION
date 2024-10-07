@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main ()
+{
+	string user;
+	float usd = 1;
+	float php = 55.93;
+	float phpv = 0.018;
+	float userinput;
+	float userinputS;
+	string number;
+	float totalcurrencyd;
+	float totalcurrencyp;
+	float pesos;
+	float dollar;
+	float total;
+	
+	cout <<"1. Pesos to Dollar\n" << "2. Dollar to Pesos\n";
+	cin >>number;
+	
+	
+	if (number == "1"){
+		cout <<"Enter the amount:";
+		cin >> pesos;
+		totalcurrencyd = pesos*phpv ;
+	} else if (number == "2"){
+		cout <<"Enter the amount:";
+		cin >> dollar;
+		totalcurrencyd = dollar*php;
+	}else {
+			return 0;
+	}
+	cout << totalcurrencyd << endl;
+	return 0;
+}
